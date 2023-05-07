@@ -108,6 +108,11 @@
               Template
             </a>
           </li>
+          <li class="toc-entry">
+            <a class="js-scroll-trigger" href="#template-print-setup">
+              Template Print Setup
+            </a>
+          </li>
           <li class="toc-entry"><a class="js-scroll-trigger" href="#overview">Bdtask Overview</a></li>
           <li class="toc-entry"><a class="js-scroll-trigger" href="#support">AiGURU Support</a></li>
 
@@ -469,7 +474,7 @@
                   </b>
                 </li>
                 <br>
-                <b> NOTE: </b> The instructions above will be applicable for all other system!
+                <b style="color: red;"> NOTE: </b> The instructions above will be applicable for all other system!
                 <br>
                 <br>
                 <li>To setup your application, browse: <br><br>
@@ -487,7 +492,7 @@
                 </div>
 
                 <li>Installer second step checks to see whether your directory and server meet the application
-                  installation requirements.<br> <b><u>NOTE</u>: SMTP server must be enabled to send emails. However,
+                  installation requirements.<br> <b style="color: red;"><u>NOTE</u>: SMTP server must be enabled to send emails. However,
                     it
                     is not mandatory during the installation process. You will have to setup your SMTP server later
                     otherwise your emails will fail to deliver.</b><br>
@@ -565,7 +570,7 @@
                 <li>Database Configuration. Go to your database manager and create a database and create a user for
                   maintaining the database. Then enter the database name, database username, database password,
                   database
-                  host and database port. Then click on the <strong>Next</strong> button.<br><br> <u>Note:</u> the
+                  host and database port. Then click on the <strong>Next</strong> button.<br><br> <u style="color: red;">Note:</u> the
                   database must be blank and the user must have all privileges to the database.</li><br>
                 </li><br>
                 <div class="exmple">
@@ -576,7 +581,7 @@
                   button.
                   then wait 4-5 seconds for the page to refresh.
                   <br><br>
-                  <u>Note:</u> the admin username and password must be unique. if you see any error then refresh the
+                  <u style="color: red;">Note:</u> the admin username and password must be unique. if you see any error then refresh the
                   page and try again. If the error still persists then you will have contact our support team to get
                   this issue resolved.
                 </li><br>
@@ -605,7 +610,7 @@
               </h2>
               <hr>
               <p class="alert alert-warning">
-                Note: If you have SSH Access/Terminal access then you can take the
+                <b style="color: red;">Note:</b> If you have SSH Access/Terminal access then you can take the
                 following steps to make your application faster and optimized.
               </p>
               <ol>
@@ -631,7 +636,7 @@
                 <img src="assets/image/optimizetion-cache-all-data.PNG" class="img-fluid csborder">
                 <br><br>
                 <li class="alert-warning py-3 px-2">
-                  Note: If you fetch any issue/broken your application after optimize/cache command run then you can
+                  <b style="color: red;">Note:</b> If you fetch any issue/broken your application after optimize/cache command run then you can
                   clear cache by run this command "php artisan optimize:clear".
                 </li>
                 <br>
@@ -862,7 +867,7 @@
                 <b>Click on the Add Creativity Level button.</b>
               </p>
               <p>
-                <b>Note: </b> What sampling temperature/Creativity Level to use, between 0 and 2. Higher values like 0.8
+                <b style="color: red;">Note: </b> What sampling temperature/Creativity Level to use, between 0 and 2. Higher values like 0.8
                 will make the output more random, while lower values like 0.2 will make it more focused and determinis.
               </p>
               <div class="exmple">
@@ -947,6 +952,10 @@
                 </span>
               </h2>
               <hr>
+              <p>The size of generated images can be 256x256, 512x512 or 1024x1024 pixels. Open-Ai currently supports
+                these three image resolutions. However, if you plan to increase the number of resolutions in the future,
+                you can manage them through our resolution control module.</p>
+              <br>
               <p>Now you will be able to create some custom image resolution size from OpenAi Resolution Lists.
                 <b>URL: https://yourdomain/open-ai/resolution</b> and <b>Click on the Add Resolution button.</b>
               </p><br>
@@ -974,6 +983,8 @@
                 </span>
               </h2>
               <hr>
+              <p>You can create your own custom categories for your custom templates if you want. We have created some popular categories according to the current demand. You can manage them according to your needs</p>
+              <br>
               <p>Now you will be able to create some custom template category from Template Category Lists. <b>URL:
                   https://yourdomain/template/category</b>and b>Click on the Add Category button.</b>
               </p><br>
@@ -999,10 +1010,12 @@
             <div id="template-print-setup" class="my-5">
               <h2>
                 <span>Template Print Setup
-                  <a class="header-link" href="#template-category"><i class="ti-link"></i></a>
+                  <a class="header-link" href="#template-print-setup"><i class="ti-link"></i></a>
                 </span>
               </h2>
               <hr>
+              <p>With the template print setup list, you can create a customized print setup for each template, including settings such as paper size, orientation, margins, headers and footers, and other options. Once you have created a template print setup, you can save it to the list and reuse it whenever you need to print that template.
+                To use the template print setup list, you will typically first create or open a template that you want to print. You can then access the print setup list and choose the appropriate print setup for that template. This can save time and reduce errors by ensuring that your print settings are consistent across all instances of a particular template.</p>
               <br>
               <p>Now you will be able to create some custom template print setup from Template Print Setup Lists.
                 <b>URL: https://yourdomain/admin/template/print-setup</b><br>
@@ -1033,6 +1046,9 @@
                 </span>
               </h2>
               <hr>
+              <p>Template: The most complex module in our full project. With the template module, you can create new templates that users can use to complete their required tasks.
+                Note: Be very careful in creating template prompts. Remember, the better prompt you write, the better response you will get. However, currently there is no extra parameter for using Language and Tone, you have to give the value of this field while creating the prompt, otherwise Language and Tone will not work.</p>
+              <br>
               <p>Now you will be able to create some custom template from Template Lists. <b>URL:
                   https://yourdomain/admin/template</b><br>
                 <b>Click on the Add Template button.</b>
