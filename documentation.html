@@ -59,7 +59,33 @@
           <li class="toc-entry"><a class="js-scroll-trigger" href="#Technology">Technologies Used</a></li>
           <li class="toc-entry"><a class="js-scroll-trigger" href="#Requirements">Requirements</a></li>
           <li class="toc-entry"><a class="js-scroll-trigger" href="#Installation">Installation Guideline</a></li>
-          <li class="toc-entry"><a class="js-scroll-trigger" href="#aiguru_configure">AiGuru Configuration</a></li>
+          <li class="toc-entry"><a class="js-scroll-trigger" href="#open-ai-configuration">Open Ai Configuration</a>
+          </li>
+          <li class="toc-entry">
+            <a class="js-scroll-trigger" href="#google-invisible-recaptcha-configuration">
+              Google Invisible Recaptcha Configuration
+            </a>
+          </li>
+          <li class="toc-entry">
+            <a class="js-scroll-trigger" href="#mail-setting-configuration">
+              Mail Setting Configuration
+            </a>
+          </li>
+          <li class="toc-entry">
+            <a class="js-scroll-trigger" href="#localization-configuration">
+              Localization Configuration
+            </a>
+          </li>
+          <li class="toc-entry">
+            <a class="js-scroll-trigger" href="#openai-model-configuration">
+              Open Ai Model Configuration
+            </a>
+          </li>
+          <li class="toc-entry">
+            <a class="js-scroll-trigger" href="#openai-creativity-level-configuration">
+              Open Ai Creativity Level Configuration
+            </a>
+          </li>
           <li class="toc-entry"><a class="js-scroll-trigger" href="#overview">Bdtask Overview</a></li>
           <li class="toc-entry"><a class="js-scroll-trigger" href="#support">AiGURU Support</a></li>
 
@@ -510,23 +536,25 @@
               <br>
               <hr />
 
-              <div id="aiguru_configure">
-                <h2 id="aiguru_configure">
-                  <span>AiGuru Configuration
-                    <a class="header-link" href="#aiguru_configure"><i class="ti-link"></i></a>
+              <div>
+                <h2 id="open-ai-configuration">
+                  <span>Open Ai Configuration
+                    <a class="header-link" href="#open-ai-configuration"><i class="ti-link"></i></a>
                   </span>
                 </h2>
-                <p>After a successfully installation let's configure the AiGuru. Let's explore the crazy things.</p>
+                <p>After a successfully installation let's configure the App. Let's explore the crazy things.</p>
                 <ol class="ins">
                   <li>OpenAI API Credentials Configuration</li>
                   <br>
                   <div style="background-color: #cbfdaa; vertical-align: middle; border-radius: 10px; padding:25px;">
                     <p style="color:black"><b style="color:red">IMPORTANT NOTE:</b>
-                      If you are successfully configure the server and install the AiGuru then you will configure the OpenAI API. If you are not configure the OpenAI API then you will not get the result. So, please configure the OpenAI API.
+                      If you are successfully configure the server and install the Application then you will configure
+                      the OpenAI API. If you are not configure the OpenAI API then you will not get the result. So,
+                      please
+                      configure the OpenAI API.
                     <ul>
                       <div class="exmple">
-                        <img src="assets/image/openai-api-set.png" class="img-fluid csborder"
-                          alt="Responsive image">
+                        <img src="assets/image/openai-api-set.png" class="img-fluid csborder" alt="Responsive image">
                       </div>
                       <br>
                       <ul>
@@ -536,333 +564,359 @@
                         <li>Fill the OpenAI Max Token (100-2000) field.</li>
                       </ul>
                       <br>
-                      <h5>If you haven't any OpenAI API credentials yet please purchase it from <a href="https://platform.openai.com/overview">OpenAI.</a></h5>
+                      <h5>If you haven't any OpenAI API credentials yet please purchase it from <a
+                          href="https://platform.openai.com/overview">OpenAI.</a></h5>
                     </ul>
                   </div>
-                  <br>
+                </ol>
+              </div>
+              <br>
+              <div>
+                <h2 id="google-invisible-recaptcha-configuration">
+                  <span>Google Invisible Recaptcha Configuration
+                    <a class="header-link" href="#open-ai-configuration"><i class="ti-link"></i></a>
+                  </span>
+                </h2>
+                <ol>
                   <li>Recaptcha API Configuration</li>
                   <br>
                   <div style="background-color: #cbfdaa; vertical-align: middle; border-radius: 10px; padding:25px;">
                     <p style="color:black"><b style="color:red">IMPORTANT NOTE:</b>
-                      In this AiGuru system reCaptcha API is used for security purpose. reCAPTCHA uses an advanced risk analysis engine and adaptive challenges to keep malicious software from engaging in abusive activities on your website. Meanwhile, legitimate users will be able to login, make purchases, view pages, or create accounts and fake users will be blocked.
+                      In this AiGuru system reCaptcha API is used for security purpose. reCAPTCHA uses an advanced risk
+                      analysis engine and adaptive challenges to keep malicious software from engaging in abusive
+                      activities on your website. Meanwhile, legitimate users will be able to login, make purchases,
+                      view pages, or create accounts and fake users will be blocked.
                     <ul>
                       <div class="exmple">
-                        <img src="assets/image/recaptcha-api-set.png" class="img-fluid csborder"
-                          alt="Responsive image">
+                        <img src="assets/image/recaptcha-api-set.png" class="img-fluid csborder" alt="Responsive image">
                       </div>
                       <br>
                       <br>
-                      <h5>If you are not configure the reCaptcha API then you will not get the result. So, please configure the reCaptcha API. Please get the reCaptcha API from <a href="https://www.google.com/recaptcha/admin/create">reCaptcha.</a></h5>
+                      <h5>If you are not configure the reCaptcha API then you will not get the result. So, please
+                        configure the reCaptcha API. Please get the reCaptcha API from <a
+                          href="https://www.google.com/recaptcha/admin/create">reCaptcha.</a></h5>
                     </ul>
                   </div>
-                  <br>
-                  <li>AiGuru Custom OpenAI Models Create</li>
-                  <br>
-                  <p>Now you will be able to create some custom models from Model Lists. <b>URL: https://yourdomain/open-ai/model</b><br>
-                    <b>Click on the Add Model button.</b>
-                  </p><br>
-                  <div class="exmple">
-                    <img src="assets/image/open-ai-model-list.png" class="img-fluid csborder" alt="Responsive image">
-                  </div>
-                  <br>
-                  <p>
-                    When Create OpenAI Model modal pop-up shown, then fill the form and click on the <b>Add</b> button.
-                  </p>
-                  <ul><b>
-                    <li>Type the Name of your Model's name on Name field section.</li>
-                    <li>Type the Short Name of your Model's name on Short Name field section.</li>
-                    <li>Select the Type of your Model's category on Type field section.</li>
-                  </b></ul>
-                  <br>
-                  <div class="exmple">
-                    <img src="assets/image/open-ai-model-create.png" class="img-fluid csborder" alt="Responsive image">
-                  </div>
-                  <br>
-                  <li>AiGuru Custom OpenAi Creativity Level Create</li>
-                  <br>
-                  <p>Now you will be able to create some custom creativity level from Creativity Level Lists. <b>URL: https://yourdomain/open-ai/creativity-level</b><br>
-                    <b>Click on the Add Creativity Level button.</b>
-                  </p><br>
-                  <div class="exmple">
-                    <img src="assets/image/open-ai-creativity-level-list.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <p>
-                    When Create OpenAI Creativity Level modal pop-up shown, then fill the form and click on the <b>Add</b> button.
-                  </p>
-                  <ul><b>
-                    <li>Type the Name of your Creativity Level name on Display Name field section.</li>
-                    <li>Type the Value of your Creativity Level on Level field section.</li>
-                  </b></ul>
-                  <br>
-                  <div class="exmple">
-                    <img src="assets/image/open-ai-creativity-level-create.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <li>AiGuru Custom OpenAi Model Tone Create</li>
-                  <br>
-                  <p>Now you will be able to create some custom tone from OpenAi Tone Lists. <b>URL: https://yourdomain/open-ai/tone</b><br>
-                    <b>Click on the Add Tone button.</b>
-                  </p><br>
-                  <div class="exmple">
-                    <img src="assets/image/open-ai-tone-list.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <p>
-                    When Create OpenAI Tone modal pop-up shown, then fill the form and click on the <b>Add</b> button.
-                  </p>
-                  <ul><b>
-                    <li>Type the Name of your Tone name on Display Name field section.</li>
-                    <li>Type the Tone Category of your Tone on Tone field section.</li>
-                  </b></ul>
-                  <br>
-                  <div class="exmple">
-                    <img src="assets/image/open-ai-tone-create.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <li>AiGuru Custom OpenAi Resolution Create</li>
-                  <br>
-                  <p>Now you will be able to create some custom image resolution size from OpenAi Resolution Lists. <b>URL: https://yourdomain/open-ai/resolution</b><br>
-                    <b>Click on the Add Resolution button.</b>
-                  </p><br>
-                  <div class="exmple">
-                    <img src="assets/image/open-ai-resolution-list.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <p>
-                    When Create OpenAI Resolution modal pop-up shown, then fill the form and click on the <b>Add</b> button.
-                  </p>
-                  <ul><b>
-                    <li>Type the Name of your Resolution name on Name field section.</li>
-                    <li>Type the Value of your Resolution Size on Resolution field section.</li>
-                  </b></ul>
-                  <br>
-                  <div class="exmple">
-                    <img src="assets/image/open-ai-resolution-create.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <li>AiGuru Custom OpenAi Model Language Create</li>
-                  <br>
-                  <p>Now you will be able to create some custom tone from OpenAi Language Lists. <b>URL: https://yourdomain/open-ai/language</b><br>
-                    <b>Click on the Add Language button.</b>
-                  </p><br>
-                  <div class="exmple">
-                    <img src="assets/image/open-ai-language-list.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <p>
-                    When Create OpenAI Language modal pop-up shown, then fill the form and click on the <b>Add</b> button.
-                  </p>
-                  <ul><b>
-                    <li>Type the Name of your Model's language name on Name field section.</li>
-                    <li>Type the Short Name of your Model's language name on Short Name field section.</li>
-                  </b></ul>
-                  <br>
-                  <div class="exmple">
-                    <img src="assets/image/open-ai-language-create.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <li>AiGuru Custom Template Category Create</li>
-                  <br>
-                  <p>Now you will be able to create some custom template category from Template Category Lists. <b>URL: https://yourdomain/template/category</b><br>
-                    <b>Click on the Add Category button.</b>
-                  </p><br>
-                  <div class="exmple">
-                    <img src="assets/image/aiguru-template-category-list.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <p>
-                    When Create Template Category modal pop-up shown, then fill the form and click on the <b>Add</b> button.
-                  </p>
-                  <ul><b>
-                    <li>Type the Name of your Category name on Name field section.</li>
-                    <li>Type the icon tag of your Category Icon with class & style on Icon field section. (Optional)<br>You can use fontawesome or other things.</li>
-                  </b></ul>
-                  <br>
-                  <div class="exmple">
-                    <img src="assets/image/aiguru-template-category-create.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <li>AiGuru Custom Template Print Setup Create</li>
-                  <br>
-                  <p>Now you will be able to create some custom template print setup from Template Print Setup Lists. <b>URL: https://yourdomain/admin/template/print-setup</b><br>
-                    <b>Click on thePrint Setup button.</b>
-                  </p><br>
-                  <div class="exmple">
-                    <img src="assets/image/aiguru-template-print-setup-list.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <p>
-                    When Create Template Print Setup modal pop-up shown, then fill the form and click on the <b>Add</b> button.
-                  </p>
-                  <ul><b>
-                    <li>Select the Template of your Print Setup on Template field section.</li>
-                    <li>Select the Paper Size of your Print Setup on Paper Size field section.</li>
-                    <li>Select the Orientation  of your Print Setup on Orientation field section.</li>
-                    <li>Type Margin Value of your Print Setup for Top, Bottom, Left, Right fieldset section.</li>
-                  </b></ul>
-                  <br>
-                  <div class="exmple">
-                    <img src="assets/image/aiguru-template-print-setup-create.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <li>AiGuru Custom Template Create</li>
-                  <br>
-                  <p>Now you will be able to create some custom template from Template Lists. <b>URL: https://yourdomain/admin/template</b><br>
-                    <b>Click on the Add Template button.</b>
-                  </p><br>
-                  <div class="exmple">
-                    <img src="assets/image/aiguru-template-list.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <p>
-                    When Create Template modal pop-up shown, then fill the form and click on the <b>Add</b> button.
-                  </p>
-                  <ul><b>
-                    <li>Type the Name of your template name on Template Name field section.</li>
-                    <li>Type the icon tag of your Template Icon with class & style on Icon field section.<br>You can use fontawesome or other things.</li>
-                    <li>Type the Description of your template description on Template Description field section.</li>
-                    <li>Select the Template Category of your Template Category on Template Category field section.</li>
-                    <li>Select the Open Ai Model of your Open Ai Model on Open Ai Model field section.</li>
-                    <li>Activate Template radio activation (Default Turn Off)</li>
-                    <li>Include Tone of Voice field radio activation (Default Turn Off)</li>
-                    <li>Include Choose Language field radio activation (Default Turn Off)</li>
-                    <li>Include Stop Sequence field radio activation (Default Turn Off)</li>
-                    <li>User Input Fields -- <br>Enter Input Field Label/Title (Required)<br>Enter Input Field Description (Optional)<br>Select Input field or Textarea field</li>
-                    <li>Prompt is text or symbols used to represent the system's readiness to perform the next command<br>
-                      Enter your prompt here in natural language whilst inserting the field ID contents at your cursor location by clicking on the field prompt buttons above.
-                    </li>
-                  </b></ul>
-                  <br>
-                  <div class="exmple">
-                    <img src="assets/image/aiguru-create-new-template.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <li>AiGuru Custom Localization create & customize</li>
-                  <br>
-                  <p>Now you will be able to create new system language from Setting->General Setting->Language Lists. <b>URL: https://yourdomain/admin/language</b><br>
-                    <b>Click on the Add New button.</b>
-                  </p><br>
-                  <div class="exmple">
-                    <img src="assets/image/localization.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <p>
-                    When Create Language modal pop-up shown, then fill the form and click on the <b>Add</b> button.
-                  </p>
-                  <ul><b>
-                    <li>Type the Short Name of your Language on Short Name field section like EX: en.</li>
-                    <li>Type the Language Name of your Language on Language Name field section like EX: English.</li>
-                  </b></ul>
-                  <br>
-                  <div class="exmple">
-                    <img src="assets/image/localization-create.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <p>
-                    When Create new Language Aiguru have a feature to edit any attribute of any language & add more phrases. <b>URL: https://yourdomain/admin/language/</b><br>
-                  </p>
-                  <br>
-                  <div class="exmple">
-                    <img src="assets/image/localization-edite.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-                  <li>AiGuru Configure Mail Setting</li>
-                  <br>
-                  <p>Now you will be able to configure mail setting from Setting->General Setting->Mail Setting. <b>URL: https://yourdomain/admin/setting/mail</b><br>
-                    <b>Click on the Mail Setting tab.</b>
-                  </p><br>
-                  <div class="exmple">
-                    <img src="assets/image/mail-setup.png" class="img-fluid csborder"
-                      alt="Responsive image">
-                  </div>
-                  <br>
-
                 </ol>
-                
               </div>
-
+              <br>
+              <li>AiGuru Custom OpenAI Models Create</li>
+              <br>
+              <p>Now you will be able to create some custom models from Model Lists. <b>URL:
+                  https://yourdomain/open-ai/model</b><br>
+                <b>Click on the Add Model button.</b>
+              </p><br>
+              <div class="exmple">
+                <img src="assets/image/open-ai-model-list.png" class="img-fluid csborder" alt="Responsive image">
+              </div>
+              <br>
+              <p>
+                When Create OpenAI Model modal pop-up shown, then fill the form and click on the <b>Add</b> button.
+              </p>
+              <ul><b>
+                  <li>Type the Name of your Model's name on Name field section.</li>
+                  <li>Type the Short Name of your Model's name on Short Name field section.</li>
+                  <li>Select the Type of your Model's category on Type field section.</li>
+                </b></ul>
+              <br>
+              <div class="exmple">
+                <img src="assets/image/open-ai-model-create.png" class="img-fluid csborder" alt="Responsive image">
+              </div>
+              <br>
+              <li>AiGuru Custom OpenAi Creativity Level Create</li>
+              <br>
+              <p>Now you will be able to create some custom creativity level from Creativity Level Lists. <b>URL:
+                  https://yourdomain/open-ai/creativity-level</b><br>
+                <b>Click on the Add Creativity Level button.</b>
+              </p><br>
+              <div class="exmple">
+                <img src="assets/image/open-ai-creativity-level-list.png" class="img-fluid csborder"
+                  alt="Responsive image">
+              </div>
+              <br>
+              <p>
+                When Create OpenAI Creativity Level modal pop-up shown, then fill the form and click on the
+                <b>Add</b> button.
+              </p>
+              <ul><b>
+                  <li>Type the Name of your Creativity Level name on Display Name field section.</li>
+                  <li>Type the Value of your Creativity Level on Level field section.</li>
+                </b></ul>
+              <br>
+              <div class="exmple">
+                <img src="assets/image/open-ai-creativity-level-create.png" class="img-fluid csborder"
+                  alt="Responsive image">
+              </div>
+              <br>
+              <li>AiGuru Custom OpenAi Model Tone Create</li>
+              <br>
+              <p>Now you will be able to create some custom tone from OpenAi Tone Lists. <b>URL:
+                  https://yourdomain/open-ai/tone</b><br>
+                <b>Click on the Add Tone button.</b>
+              </p><br>
+              <div class="exmple">
+                <img src="assets/image/open-ai-tone-list.png" class="img-fluid csborder" alt="Responsive image">
+              </div>
+              <br>
+              <p>
+                When Create OpenAI Tone modal pop-up shown, then fill the form and click on the <b>Add</b> button.
+              </p>
+              <ul><b>
+                  <li>Type the Name of your Tone name on Display Name field section.</li>
+                  <li>Type the Tone Category of your Tone on Tone field section.</li>
+                </b></ul>
+              <br>
+              <div class="exmple">
+                <img src="assets/image/open-ai-tone-create.png" class="img-fluid csborder" alt="Responsive image">
+              </div>
+              <br>
+              <li>AiGuru Custom OpenAi Resolution Create</li>
+              <br>
+              <p>Now you will be able to create some custom image resolution size from OpenAi Resolution Lists.
+                <b>URL: https://yourdomain/open-ai/resolution</b><br>
+                <b>Click on the Add Resolution button.</b>
+              </p><br>
+              <div class="exmple">
+                <img src="assets/image/open-ai-resolution-list.png" class="img-fluid csborder" alt="Responsive image">
+              </div>
+              <br>
+              <p>
+                When Create OpenAI Resolution modal pop-up shown, then fill the form and click on the <b>Add</b>
+                button.
+              </p>
+              <ul><b>
+                  <li>Type the Name of your Resolution name on Name field section.</li>
+                  <li>Type the Value of your Resolution Size on Resolution field section.</li>
+                </b></ul>
+              <br>
+              <div class="exmple">
+                <img src="assets/image/open-ai-resolution-create.png" class="img-fluid csborder" alt="Responsive image">
+              </div>
+              <br>
+              <li>AiGuru Custom OpenAi Model Language Create</li>
+              <br>
+              <p>Now you will be able to create some custom tone from OpenAi Language Lists. <b>URL:
+                  https://yourdomain/open-ai/language</b><br>
+                <b>Click on the Add Language button.</b>
+              </p><br>
+              <div class="exmple">
+                <img src="assets/image/open-ai-language-list.png" class="img-fluid csborder" alt="Responsive image">
+              </div>
+              <br>
+              <p>
+                When Create OpenAI Language modal pop-up shown, then fill the form and click on the <b>Add</b>
+                button.
+              </p>
+              <ul><b>
+                  <li>Type the Name of your Model's language name on Name field section.</li>
+                  <li>Type the Short Name of your Model's language name on Short Name field section.</li>
+                </b></ul>
+              <br>
+              <div class="exmple">
+                <img src="assets/image/open-ai-language-create.png" class="img-fluid csborder" alt="Responsive image">
+              </div>
+              <br>
+              <li>AiGuru Custom Template Category Create</li>
+              <br>
+              <p>Now you will be able to create some custom template category from Template Category Lists. <b>URL:
+                  https://yourdomain/template/category</b><br>
+                <b>Click on the Add Category button.</b>
+              </p><br>
+              <div class="exmple">
+                <img src="assets/image/aiguru-template-category-list.png" class="img-fluid csborder"
+                  alt="Responsive image">
+              </div>
+              <br>
+              <p>
+                When Create Template Category modal pop-up shown, then fill the form and click on the <b>Add</b>
+                button.
+              </p>
+              <ul><b>
+                  <li>Type the Name of your Category name on Name field section.</li>
+                  <li>Type the icon tag of your Category Icon with class & style on Icon field section.
+                    (Optional)<br>You can use fontawesome or other things.</li>
+                </b></ul>
+              <br>
+              <div class="exmple">
+                <img src="assets/image/aiguru-template-category-create.png" class="img-fluid csborder"
+                  alt="Responsive image">
+              </div>
+              <br>
+              <li>AiGuru Custom Template Print Setup Create</li>
+              <br>
+              <p>Now you will be able to create some custom template print setup from Template Print Setup Lists.
+                <b>URL: https://yourdomain/admin/template/print-setup</b><br>
+                <b>Click on thePrint Setup button.</b>
+              </p><br>
+              <div class="exmple">
+                <img src="assets/image/aiguru-template-print-setup-list.png" class="img-fluid csborder"
+                  alt="Responsive image">
+              </div>
+              <br>
+              <p>
+                When Create Template Print Setup modal pop-up shown, then fill the form and click on the <b>Add</b>
+                button.
+              </p>
+              <ul><b>
+                  <li>Select the Template of your Print Setup on Template field section.</li>
+                  <li>Select the Paper Size of your Print Setup on Paper Size field section.</li>
+                  <li>Select the Orientation of your Print Setup on Orientation field section.</li>
+                  <li>Type Margin Value of your Print Setup for Top, Bottom, Left, Right fieldset section.</li>
+                </b></ul>
+              <br>
+              <div class="exmple">
+                <img src="assets/image/aiguru-template-print-setup-create.png" class="img-fluid csborder"
+                  alt="Responsive image">
+              </div>
+              <br>
+              <li>AiGuru Custom Template Create</li>
+              <br>
+              <p>Now you will be able to create some custom template from Template Lists. <b>URL:
+                  https://yourdomain/admin/template</b><br>
+                <b>Click on the Add Template button.</b>
+              </p><br>
+              <div class="exmple">
+                <img src="assets/image/aiguru-template-list.png" class="img-fluid csborder" alt="Responsive image">
+              </div>
+              <br>
+              <p>
+                When Create Template modal pop-up shown, then fill the form and click on the <b>Add</b> button.
+              </p>
+              <ul><b>
+                  <li>Type the Name of your template name on Template Name field section.</li>
+                  <li>Type the icon tag of your Template Icon with class & style on Icon field section.<br>You can
+                    use fontawesome or other things.</li>
+                  <li>Type the Description of your template description on Template Description field section.</li>
+                  <li>Select the Template Category of your Template Category on Template Category field section.
+                  </li>
+                  <li>Select the Open Ai Model of your Open Ai Model on Open Ai Model field section.</li>
+                  <li>Activate Template radio activation (Default Turn Off)</li>
+                  <li>Include Tone of Voice field radio activation (Default Turn Off)</li>
+                  <li>Include Choose Language field radio activation (Default Turn Off)</li>
+                  <li>Include Stop Sequence field radio activation (Default Turn Off)</li>
+                  <li>User Input Fields -- <br>Enter Input Field Label/Title (Required)<br>Enter Input Field
+                    Description (Optional)<br>Select Input field or Textarea field</li>
+                  <li>Prompt is text or symbols used to represent the system's readiness to perform the next
+                    command<br>
+                    Enter your prompt here in natural language whilst inserting the field ID contents at your cursor
+                    location by clicking on the field prompt buttons above.
+                  </li>
+                </b></ul>
+              <br>
+              <div class="exmple">
+                <img src="assets/image/aiguru-create-new-template.png" class="img-fluid csborder"
+                  alt="Responsive image">
+              </div>
+              <br>
+              <li>AiGuru Custom Localization create & customize</li>
+              <br>
+              <p>Now you will be able to create new system language from Setting->General Setting->Language Lists.
+                <b>URL: https://yourdomain/admin/language</b><br>
+                <b>Click on the Add New button.</b>
+              </p><br>
+              <div class="exmple">
+                <img src="assets/image/localization.png" class="img-fluid csborder" alt="Responsive image">
+              </div>
+              <br>
+              <p>
+                When Create Language modal pop-up shown, then fill the form and click on the <b>Add</b> button.
+              </p>
+              <ul><b>
+                  <li>Type the Short Name of your Language on Short Name field section like EX: en.</li>
+                  <li>Type the Language Name of your Language on Language Name field section like EX: English.</li>
+                </b></ul>
+              <br>
+              <div class="exmple">
+                <img src="assets/image/localization-create.png" class="img-fluid csborder" alt="Responsive image">
+              </div>
+              <br>
+              <p>
+                When Create new Language Aiguru have a feature to edit any attribute of any language & add more
+                phrases. <b>URL: https://yourdomain/admin/language/</b><br>
+              </p>
+              <br>
+              <div class="exmple">
+                <img src="assets/image/localization-edite.png" class="img-fluid csborder" alt="Responsive image">
+              </div>
+              <br>
+              <li>AiGuru Configure Mail Setting</li>
+              <br>
+              <p>Now you will be able to configure mail setting from Setting->General Setting->Mail Setting. <b>URL:
+                  https://yourdomain/admin/setting/mail</b><br>
+                <b>Click on the Mail Setting tab.</b>
+              </p><br>
+              <div class="exmple">
+                <img src="assets/image/mail-setup.png" class="img-fluid csborder" alt="Responsive image">
+              </div>
               <br>
 
-              <hr />
-              <br>
-              <div id="system_flow_chartd">
-                <h2 id="overview">
-                  <span>Bdtask Overview & Support
-                    <a class="header-link" href="#overview"><i class="ti-link"></i></a>
-                  </span>
-                </h2>
-                <p>Bdtask is a well known Envato based software development company. We are dedicated to create and
-                  deliver products to provide the best customer satisfaction.<br> Please visit our company website: <a
-                    href="http://www.bdtask.com">Bdtask</a>
-
-                <h2 id="support">
-                  <span>AiGURU Support<a class="header-link" href="#support"><i class="ti-link"></i></a>
-                  </span>
-                </h2>
-                <p>If you wish to know anything about AiGURU then please do not hesitate to contact our support team:
-                </p>
-                <p>For installation support: <b><a href="mailto:info@bdtask.com">info@bdtask.com</a></b>
-                  <br>
-                  For software customization support: <b><a
-                      href="mailto:business@bdtask.com">business@bdtask.com</a></b>
-                  <br>
-                  To get support via Skype: <b><a href="https://www.bdtask.com/">Bdtask</a></b>
-                </p>
-                <br>
-              </div>
-              <!--  /.End of documentation text content -->
+              </ol>
 
             </div>
-            <div class="col-md-3 d-none d-sm-none d-md-block rightSidebar">
+
+            <br>
+
+            <hr />
+            <br>
+            <div id="system_flow_chartd">
+              <h2 id="overview">
+                <span>Bdtask Overview & Support
+                  <a class="header-link" href="#overview"><i class="ti-link"></i></a>
+                </span>
+              </h2>
+              <p>Bdtask is a well known Envato based software development company. We are dedicated to create and
+                deliver products to provide the best customer satisfaction.<br> Please visit our company website: <a
+                  href="http://www.bdtask.com">Bdtask</a>
+
+              <h2 id="support">
+                <span>AiGURU Support<a class="header-link" href="#support"><i class="ti-link"></i></a>
+                </span>
+              </h2>
+              <p>If you wish to know anything about AiGURU then please do not hesitate to contact our support team:
+              </p>
+              <p>For installation support: <b><a href="mailto:info@bdtask.com">info@bdtask.com</a></b>
+                <br>
+                For software customization support: <b><a href="mailto:business@bdtask.com">business@bdtask.com</a></b>
+                <br>
+                To get support via Skype: <b><a href="https://www.bdtask.com/">Bdtask</a></b>
+              </p>
+              <br>
+            </div>
+            <!--  /.End of documentation text content -->
+
+          </div>
+          <div class="col-md-3 d-none d-sm-none d-md-block rightSidebar">
+          </div>
+        </div>
+      </div>
+      <footer class="site-footer">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <div class="Copyright-text">
+              <p>Copyright © 2023 <a href="http://www.bdtask.com" target="_blank">Bdtask </a>. All rights reserved.
+              </p>
             </div>
           </div>
         </div>
-        <footer class="site-footer">
-          <div class="row align-items-center">
-            <div class="col-md-7">
-              <div class="Copyright-text">
-                <p>Copyright © 2023 <a href="http://www.bdtask.com" target="_blank">Bdtask </a>. All rights reserved.
-                </p>
-              </div>
-            </div>
-          </div>
-        </footer><!-- /.End of site footer -->
-      </div><!-- /.Page Content Holder -->
-      <div class="overlay"></div>
-    </div><!-- /.End of loader -->
-    <!-- Optional JavaScript -->
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/pace.min.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/jquery.dd.min.js"></script>
-    <script src="assets/js/metisMenu.min.js"></script>
-    <script src="assets/js/ResizeSensor.min.js"></script>
-    <script src="assets/js/theia-sticky-sidebar.min.js"></script>
-    <script src="assets/js/highlight.pack.js"></script>
-    <script src="assets/js/clipboard.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/OwlCarousel2/owl.carousel.min.js"></script>
-    <script src="assets/js/script.js"></script>
+      </footer><!-- /.End of site footer -->
+    </div><!-- /.Page Content Holder -->
+    <div class="overlay"></div>
+  </div><!-- /.End of loader -->
+  <!-- Optional JavaScript -->
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/pace.min.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/jquery.dd.min.js"></script>
+  <script src="assets/js/metisMenu.min.js"></script>
+  <script src="assets/js/ResizeSensor.min.js"></script>
+  <script src="assets/js/theia-sticky-sidebar.min.js"></script>
+  <script src="assets/js/highlight.pack.js"></script>
+  <script src="assets/js/clipboard.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/OwlCarousel2/owl.carousel.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
